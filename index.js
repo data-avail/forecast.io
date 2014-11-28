@@ -76,7 +76,7 @@ Forecast.prototype.getAtTime = function getAtTime (latitude, longitude, time, op
     if (err) {
       callback(err);
     } else {
-        if (typeof data == "object") {
+        if (typeof data === "object") {
             data = JSON.parse(data);
         }
       callback(null, res, data);
